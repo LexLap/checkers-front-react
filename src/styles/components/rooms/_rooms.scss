@@ -1,0 +1,56 @@
+.rooms {
+  width: 70%;
+  min-height: calc(100vh - 4rem);
+  margin: 4rem auto 0;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding-top: 1rem;
+
+  h3 {
+    text-align: center;
+    color: $myBlue;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.rooms__section {
+  padding: 1rem;
+}
+
+.room {
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+
+  &:hover {
+    background: #ccc;
+  }
+}
+
+.rooms__input-new {
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid $myBlue;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.rooms__button-new {
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  background: $myBlue;
+  border: none;
+  width: 100%;
+  display: block;
+
+  &:hover {
+    cursor: pointer;
+    background: $myLightBlue;
+  }
+}

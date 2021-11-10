@@ -1,0 +1,42 @@
+.private-message {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(100, 100, 100, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.private-message__body {
+  display: block;
+  width: 15rem;
+  min-height: 10rem;
+  border: 2px solid $myBlue;
+  border-radius: 5px;
+  background: white;
+  padding: 1rem;
+
+  textarea {
+    width: 100%;
+    resize: none;
+    padding: 0.5rem;
+  }
+
+  button {
+    border: none;
+    color: white;
+    margin: 1rem;
+    border-radius: 5px;
+    background: $myBlue;
+    padding: 0.5rem;
+
+    &:hover {
+      background: $myLightBlue;
+      cursor: pointer;
+    }
+  }
+}
